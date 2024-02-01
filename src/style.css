@@ -1,1 +1,45 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: grey;
+  font-family: "Alice", serif;
+  font-size: 120px;
+}
+
+#refresh-button {
+  font-family: Arial, Helvetica, sans-serif !important;
+  margin-top: -80px;
+}
+
+button {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+#number-card {
+  font-size: 200px;
+}
+
+#suits-one {
+  top: -30px !important;
+}
+
+#suits-two {
+  bottom: -30px !important;
+}
+
+#the-card {
+  width: 25rem;
+  height: 35rem;
+}
+
+form {
+  font-size: 20px;
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.875) !important;
+}
+
+#theForm {
+  margin-top: -80px;
+}

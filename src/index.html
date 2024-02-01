@@ -11,19 +11,68 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div
+      class="container-fluid text-center d-flex justify-content-around align-items-sm-center align-items-md-center d-flex flex-column min-vh-100 min-vw-100"
+    >
+      <div>
+        <div
+          id="the-card"
+          class="card shadow-lg p-3 mb-0 pb-0 mt-5 bg-body rounded"
+        >
+          <div class="card-body">
+            <div
+              id="suits-one"
+              class="ms-3 position-absolute top-0 start-0 col-sm d-flex justify-content-start"
+            >
+              Suits
+            </div>
+            <div
+              id="number-card"
+              class=" position-absolute top-50 start-50 translate-middle"
+            >
+              Number
+            </div>
+            <div
+              id="suits-two"
+              class="col-sm me-3 d-flex justify-content-end align-items-start position-absolute bottom-0 end-0"
+            >
+              Suits
+            </div>
+          </div>
+        </div>
+        <button id="refresh-button" type="submit" class="btn btn-success">
+          Load new card
+        </button>
       </div>
+
+      <form action="" id="theForm">
+        <div class="row">
+          <div class="col mb-3">
+            <label for="width" class="form-label">Box Width: </label>
+            <input type="text" class="form-control" id="width" />
+          </div>
+          <div class="col mb-3">
+            <label for="height" class="form-label">Box Height: </label>
+            <input type="text" class="form-control" id="height" />
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <button type="submit" class="btn btn-secondary mb-4">
+                Change size
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
   </body>
 </html>
